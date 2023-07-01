@@ -108,13 +108,13 @@ const USER_CONFIG = {
   USERS: [
     {
       // 想要发送的人的名字
-      name: '小兔叽',
+      name: '小沈',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       // 使用其他通道时，请严格按照各个通道的教程进行填写
-      id: '[oH12d6Q9mW2xYxl90vwMpk-OAb6k,oH12d6WJtm-HZsW0PBYJBJL03NKw]',
+      id: ["oH12d6Q9mW2xYxl90vwMpk-OAb6k","oH12d6WJtm-HZsW0PBYJBJL03NKw"],
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
-      useTemplateId: 'vEZA56J4Dg3PyT5lY4l03qjcf4KLtMRWUgZjhM9p7hk',
+      useTemplateId: 'stuIqMdNFQLSXD0j-6CUB-j2Mcn2JlZz2MgTudW0GWg',
       // 所在省份或城市，也可以不填
       province: '浙江',
       // 所在城市或县区
@@ -124,12 +124,12 @@ const USER_CONFIG = {
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: 'https://wangxinleo.cn',
+      openUrl: 'https://www.xzw.com/fortune/',
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '小沈', year: '1999', date: '11-28',
+          type: '生日', name: '小沈', year: '1999', date: '11-28',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
@@ -149,27 +149,27 @@ const USER_CONFIG = {
     {
       name: '小沈',
       id: 'oH12d6Q9mW2xYxl90vwMpk-OAb6k',
-      useTemplateId: 'vEZA56J4Dg3PyT5lY4l03qjcf4KLtMRWUgZjhM9p7hk',
+      useTemplateId: 'stuIqMdNFQLSXD0j-6CUB-j2Mcn2JlZz2MgTudW0GWg',
       province: '浙江',
       city: '上虞',
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      horoscopeDate: '11-28',
+      horoscopeDateType: '今日',
       openUrl: 'https://www.xzw.com/fortune/',
-      festivals: [],
-      customizedDateList: [],
+      festivals: [{"type":"生日","name":"小沈的生日","date":"11-28","year":"1999"},{"type":"生日","name":"小鱼的生日","date":"05-04","year":"2001"}],
+      customizedDateList: [{"keyword":"我们的相遇","date":"2021-08-01"}],
       courseSchedule: null
     },
     {
       name: '小鱼',
       id: 'oH12d6WJtm-HZsW0PBYJBJL03NKw',
-      useTemplateId: 'vEZA56J4Dg3PyT5lY4l03qjcf4KLtMRWUgZjhM9p7hk',
+      useTemplateId: 'stuIqMdNFQLSXD0j-6CUB-j2Mcn2JlZz2MgTudW0GWg',
       province: '上海',
       city: '浦东',
-      horoscopeDate: '',
-      horoscopeDateType: '',
+      horoscopeDate: '5-4',
+      horoscopeDateType: '今日',
       openUrl: 'https://www.xzw.com/fortune/',
-      festivals: [],
-      customizedDateList: [],
+      festivals: [{"type":"生日","name":"小沈的生日","date":"11-28","year":"1999"},{"type":"生日","name":"小鱼的生日","date":"05-04","year":"2001"}],
+      customizedDateList: [{"keyword":"我们的相遇","date":"2021-08-01"}],
       courseSchedule: null
     },
 
@@ -183,7 +183,7 @@ const USER_CONFIG = {
 
   // 使用微信测试号：【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
   // 使用其他通道时，请填写 config/template-config.cjs 中【推送完成提醒】模板的id
-  CALLBACK_TEMPLATE_ID: 'wkd61buvpjXZ-h8OsyvXvqLJMvDxC4EEU-3XYKQT-sw',
+  CALLBACK_TEMPLATE_ID: 'zGXHpqC_6iIQ2oOgScIc26TI3OkyaWsQwMOM0LLoge4',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -192,7 +192,7 @@ const USER_CONFIG = {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       // 使用其他通道时，请严格按照各个通道的教程进行填写
-      id: 'oH12d6WJtm-HZsW0PBYJBJL03NKw',
+      id: ['oH12d6WJtm-HZsW0PBYJBJL03NKw','oH12d6Q9mW2xYxl90vwMpk-OAb6k']
     }
     // 你可以不断按格式往下增加
     // ...
@@ -214,9 +214,9 @@ const USER_CONFIG = {
    * */
   
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: '咸阳',
+  PROVINCE: '浙江',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: '长武',
+  CITY: '上虞',
 
   /** 重要节日相关 */
 
@@ -240,18 +240,12 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '老婆', year: '1996', date: '09-09', isShowAge: true,
+      type: '生日', name: '小沈', year: '1999', date: '11-28', isShowAge: true,
     },
     {
-      type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
-    },
-    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-    {
-      type: '生日', name: '李四', year: '1996', date: '09-31', isShowAge: true,
-    },
-    {
-      type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+      type: '节日', name: '相遇', year: '2001', date: '05-04',isShowAge: true,
     }
+    // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -261,7 +255,7 @@ const USER_CONFIG = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
@@ -271,11 +265,8 @@ const USER_CONFIG = {
    * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    { keyword: 'love_day', date: '2022-09-08' },
+    { keyword: 'love_day', date: '2021-08-01' },
     // 结婚纪念日
-    { keyword: 'marry_day', date: '2022-09-09' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
     // 你可以不断按格式往下增加
     // ...
   ],
