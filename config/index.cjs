@@ -145,7 +145,7 @@ const USER_CONFIG = {
       // 如果courseSchedule不存在或者为空（null）则认为没有课程
       // 如果courseSchedule是一个数组，则认为不区分单双周，直接填写星期几对应的课表数据即可
       // 如果courseSchedule是一个对象（如下面所示）
-       
+       },
     {
       name: '小沈',
       id: 'oH12d6Q9mW2xYxl90vwMpk-OAb6k',
