@@ -154,7 +154,7 @@ const USER_CONFIG = {
       city: '上虞',
       horoscopeDate: '',
       horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
+      openUrl: 'https://www.xzw.com/fortune/',
       festivals: [],
       customizedDateList: [],
       courseSchedule: null
@@ -167,7 +167,7 @@ const USER_CONFIG = {
       city: '浦东',
       horoscopeDate: '',
       horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
+      openUrl: 'https://www.xzw.com/fortune/',
       festivals: [],
       customizedDateList: [],
       courseSchedule: null
@@ -183,7 +183,7 @@ const USER_CONFIG = {
 
   // 使用微信测试号：【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
   // 使用其他通道时，请填写 config/template-config.cjs 中【推送完成提醒】模板的id
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: 'wkd61buvpjXZ-h8OsyvXvqLJMvDxC4EEU-3XYKQT-sw',
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
   CALLBACK_USERS: [
@@ -192,7 +192,7 @@ const USER_CONFIG = {
       name: '自己',
       // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       // 使用其他通道时，请严格按照各个通道的教程进行填写
-      id: '',
+      id: 'oH12d6WJtm-HZsW0PBYJBJL03NKw',
     }
     // 你可以不断按格式往下增加
     // ...
